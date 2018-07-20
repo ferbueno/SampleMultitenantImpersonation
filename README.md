@@ -24,3 +24,25 @@ The `Domain` plugin contains the domain classes to be tested. For now, it's only
 
 The `Core` plugin contains every class necessary to authenticate and impersonate a `User` with a specific `accountId`.
 
+## Steps to reproduce
+
+To `manually` test the Multi Tenant
+
+1. Pull the repo
+2. Run `grails run-app`
+3. Do a `post` request to `localhost:9999/test` with a `JSON` that looks like this: 
+```json
+ {
+     "currencyId": "USD",
+     "description": "US Dollar"
+ } 
+ ```
+ It will store the currency.
+
+To perform `integration` tests:
+
+1. Pull the repo
+2. Run `grails test-app -integration`
+
+Thank you for reading! :D
+
