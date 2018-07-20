@@ -1,0 +1,3 @@
+rootProject.name='Sample.Domain'
+include ':Sample.Core'
+project(':Sample.Core').projectDir = new File(settingsDir, '../Core')

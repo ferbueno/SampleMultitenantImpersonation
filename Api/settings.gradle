@@ -1,0 +1,4 @@
+rootProject.name='Sample.Api'
+include ':Sample.Domain', ':Sample.Core'
+project(':Sample.Domain').projectDir = new File(settingsDir, '../Domain')
+project(':Sample.Core').projectDir = new File(settingsDir, '../Core')
